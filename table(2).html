@@ -1,86 +1,69 @@
-@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>표 Table</title>
+    <link rel="stylesheet" href="./tablestyle.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+          <th scope="col">목</th>
+          <th scope="col">목</th>
+          <th scope="col">금</th>
+        </tr>
+      </thead>
+      <!--class=""는 추후 css에서 배울내용 일단 따라만 해보자-->
+      <tbody>
+        <tr>
+          <th scope="row">1교시</th>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+          <td class="coding">모각코</td>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+          <td class="coding">모각코</td>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+        </tr>
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  letter-spacing: -0.03em;
-}
+        <tr>
+          <th scope="row">2교시</th>
+          <!--td>왕초보 HTML &amp; CSS</td-->
+          <td rowspan="2" class="js-skillup">JavaScript 스킬업</td>
+          <!--td>왕초보 HTML &amp; CSS</td-->
+          <td rowspan="2" class="js-skillup">JavaScript 스킬업</td>
+          <!--td>왕초보 HTML &amp; CSS</td-->
+        </tr>
 
-html {
-  font-family: "SpoqaHanSans";
-  font-size: 16px;
-  line-height: 1.5;
-  color: #1f2d3d;
-}
+        <tr>
+          <th scope="row">3교시</th>
+          <td class="js-basic">JavaScript 시작반</td>
+          <td class="js-basic">JavaScript 시작반</td>
+          <td class="js-basic">JavaScript 시작반</td>
+        </tr>
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-}
+        <tr>
+          <th colspan="6">점심시간</th>
+        </tr>
 
-table {
-  border: 1px solid #000;
-  border-collapse: collapse;
-}
+        <tr>
+          <th scope="row">4교시</th>
+          <td class="sass-basic">SASS 기초반</td>
+          <td rowspan="2" class="portfolio">HTML &amp; CSS 포트폴리오반</td>
+          <td rowspan="2">Open Seminar</td>
+          <td rowspan="2" class="portfolio">HTML &amp; CSS 포트폴리오반</td>
+          <td class="sass-basic">SASS 기초반</td>
+        </tr>
 
-td,
-th {
-  white-space: nowrap;
-  vertical-align: center;
-  text-align: center;
-  font-size: 13px;
-}
-
-th {
-  padding: 4px 12px;
-}
-
-td {
-  padding: 12px 24px;
-  font-size: 12px;
-}
-
-thead {
-  background-color: #000;
-  color: #fff;
-}
-
-tbody th {
-  background-color: #1f2d3d;
-  color: #fff;
-}
-
-tbody th[colspan="6"] {
-  padding: 10px;
-  padding-left: 55px;
-  background-color: #f9fafc;
-  color: #1f2d3d;
-}
-
-td.html-css-basic {
-  color: #1fb6ff;
-}
-
-td.js-basic {
-  color: #ffc82c;
-}
-
-td.js-skillup {
-  color: #592dea;
-}
-
-td.sass-basic {
-  color: #ff16d1;
-}
-
-td.coding {
-  color: #ff5216;
-}
-
-td.portfolio {
-  color: #13ce66;
-}
+        <tr>
+          <th scope="row">5교시</th>
+          <td>모각코</td>
+          <td>모각코</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
