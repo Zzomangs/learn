@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>표 Table</title>
+    <link rel="stylesheet" href="./tablestyle.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+          <th scope="col">목</th>
+          <th scope="col">목</th>
+          <th scope="col">금</th>
+        </tr>
+      </thead>
+      <!--class=""는 추후 css에서 배울내용 일단 따라만 해보자-->
+      <tbody>
+        <tr>
+          <th scope="row">1교시</th>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+          <td class="coding">모각코</td>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+          <td class="coding">모각코</td>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+        </tr>
+
+        <tr>
+          <th scope="row">2교시</th>
+          <!--td>왕초보 HTML &amp; CSS</td-->
+          <td rowspan="2" class="js-skillup">JavaScript 스킬업</td>
+          <!--td>왕초보 HTML &amp; CSS</td-->
+          <td rowspan="2" class="js-skillup">JavaScript 스킬업</td>
+          <!--td>왕초보 HTML &amp; CSS</td-->
+        </tr>
+
+        <tr>
+          <th scope="row">3교시</th>
+          <td class="js-basic">JavaScript 시작반</td>
+          <td class="js-basic">JavaScript 시작반</td>
+          <td class="js-basic">JavaScript 시작반</td>
+        </tr>
+
+        <tr>
+          <th colspan="6">점심시간</th>
+        </tr>
+
+        <tr>
+          <th scope="row">4교시</th>
+          <td class="sass-basic">SASS 기초반</td>
+          <td rowspan="2" class="portfolio">HTML &amp; CSS 포트폴리오반</td>
+          <td rowspan="2">Open Seminar</td>
+          <td rowspan="2" class="portfolio">HTML &amp; CSS 포트폴리오반</td>
+          <td class="sass-basic">SASS 기초반</td>
+        </tr>
+
+        <tr>
+          <th scope="row">5교시</th>
+          <td>모각코</td>
+          <td>모각코</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
