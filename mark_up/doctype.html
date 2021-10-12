@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="강예령" />
+    <meta name="ketwords" content="자바스크립트, 구름강의" />
+    <meta name="discription" content="뭐가들어갈까~" />
+    <title>김버그의 버그없는 html & Css</title>
+    <link rel="stylesheet" href="doctype.css" />
+  </head>
+  <body>
+    <h1>kimbug</h1>
+    <script src="./doctype.js"></script>
+    <script>
+      var h1 = document.querySelector("h1");
+      h1.addEventListener("click", function (event) {
+        this.textContent = "hi";
+      });
+    </script>
+  </body>
+</html>
+<!-- 검색에 사용되는 타이틀.(서치 엔지니어 옵션) 글자나열은 안됨. 페이지에 대해 간단히 알려주는 내용.
+  -->
+<!--style태그는 최대한 사용 안하는걸 추천 html내에서 css코드 사용시.-->
+<!-- <컨트롤더하기 물음표> 여기에 스타일을 쓰면 기껏 짠 css를 덮어버리므로 사용노-->
+<!-- <스크립트파일은 자바스크립트를 넣을때 사용하는 태그
+      script를 head안에 넣지 않는 이유=다른 서버의 스크립트를 가지고 올 수도 있기때문에.
+      렌더링이 맨 위부터 내려오기때문에 헤드에 썼는데 오래걸리면 로딩하는데 오래걸림
+      스크립트 태그는 바디내에서도 제일 마지막에 넣을 것> -->
+<!--뷰포트는 화면크기를 말하는것. 디바이스대로 -->
+<!--아니 느낌표만 했는데 기본 다떠버리네
+  그리고 링크할때는 link:css찾아서 바로 하면 바로 작성됨-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
