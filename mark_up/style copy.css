@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS 
+float을 할때는 부모요소가 아닌 자식요소에 집어넣기*/
+
+.tab-menu {
+  list-style: none;
+  border-bottom: 1px solid #e5eaef;
+  padding: 0px;
+  max-width: 550px;
+}
+
+.tab-menu-item {
+  margin-right: 16px;
+  float: left;
+}
+
+.tab-menu-item.active {
+  border-bottom: 2px solid #2860e1;
+}
+
+.tab-menu-item a {
+  padding: 16px 20px;
+  display: block;
+}
+
+.tab-menu-item.active a {
+  color: #2860e1;
+  font-weight: 500;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.tab-menu-item:last-child {
+  margin-right: 0px;
+}
