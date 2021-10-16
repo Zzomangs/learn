@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: thistle;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2d3d;
+  line-height: 1.25;
+}
+
+strong {
+  font-size: 14px;
+  font-weight: 400;
+  color: #afb3b9;
+  line-height: 1.4285714286;
+}
+
+p {
+  font-size: 16px;
+  color: #79818b;
+  line-height: 1.5;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+.card {
+  padding: 20px;
+  background-color: rgb(255, 231, 236);
+  max-width: 540px;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.card-content {
+  float: left;
+}
+.card-user {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-right: 20px;
+  float: left;
+}
+.card-content h1 {
+  margin-bottom: 4px;
+}
+
+.card-content strong {
+  margin-bottom: 12px;
+  display: block;
+}
+/*여기 플로트가 없으니까 애들이 아래로 줄줄 내려가네*/
+
+/*타입별로 ""들어가는지 안들어가는지 확인 제대로하기.*/
