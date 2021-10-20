@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  border: none;
+}
+
+.sr-only {
+  visibility: hidden;
+  position: absolute;
+}
+
+.card {
+  display: flex;
+  width: 840px;
+  height: 248px;
+  padding: 24px;
+}
+
+.card-image {
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  background-image: url(./assets/img-house.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-right: 24px;
+}
+
+.like-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  background-image: url(./assets/icon-favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+}
+.card-content {
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.plus-badge {
+  background-color: #92174d;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.property-type span {
+  color: #7d858f;
+  margin-bottom: 9px;
+}
+
+.property-rate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.property-rate strong {
+  line-height: 1.25;
+  font-weight: 400;
+  margin-right: 2px;
+}
+
+.property-rate::before {
+  content: "";
+  background-image: url(./assets/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.property-rate span {
+  color: #7d858f;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #151b26;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.card-detail {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.142857142857143;
+  color: #7d858f;
+}
+
+.property-detail div:first-child {
+  margin-bottom: 8px;
+}
+
+.property-detail dd span::after {
+  content: "·";
+  margin: 0 6px;
+}
+
+.property-detail dd span:last-child::after {
+  content: "";
+  margin: 0;
+}
