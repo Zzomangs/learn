@@ -27,16 +27,17 @@ body {
 .line-button::after {
   content: "";
   position: absolute;
-  background-color: #00ff44;
+  background-color: ##f047d9;
   height: 2px;
   left: 0;
   bottom: 0;
   width: 0; /*0에서시작*/
-  transition: width 250ms ease-in;
+  transition: width 250ms ease-in, background-color 250ms ease-in;
 }
 
 .line-button:hover::after {
   width: 100%; /*에서끝*/
+  background-color: turquoise;
 }
 
 /* .line-button {
