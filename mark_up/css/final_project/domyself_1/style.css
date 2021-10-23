@@ -41,15 +41,239 @@ p {
   font-size: 16px;
   line-height: 1.5;
   color: #2b292d;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
 }
 
-/* 768px desktop */
-@media screen and (min-width: 728px) {
+/* begin code */
+
+/* landing */
+
+.landing {
+  background-color: #fdded8;
+  text-align: center;
+  box-shadow: 0 4px 4px #999;
+}
+
+.landing-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  color: #2b292d;
+}
+
+.landing-title {
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.05;
+  margin-bottom: 24px;
+}
+
+.landing-desc {
+  margin-bottom: 24px;
+}
+
+/* .landing .button-group */
+.landing .button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fill-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  height: 48px;
+  width: 140px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #3040c4;
+  text-align: center;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fill-button.inverted {
+  color: #3040c4;
+  background-color: #fff;
+}
+
+.landing .button-group .fill-button:first-child {
+  margin-right: 8px;
+}
+
+.fill-button:hover {
+  opacity: 0.5;
+}
+
+/* service */
+
+.service {
+  background-color: #f4f5f7;
+}
+
+.service-content {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  color: #2b292d;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.363636363636364;
+  letter-spacing: -0.04;
+  margin-bottom: 16px;
+}
+
+.service-desc.first {
+  margin-bottom: 40px;
+}
+
+/* program */
+
+.program-content {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  color: #2b292d;
+}
+
+.program-name {
+  color: #009b4d;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.program-title {
+  font-size: 34px;
+  line-height: 1.0588235294117;
+  margin-bottom: 24px;
+}
+
+.program-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+}
+
+.program-block {
+  padding: 24px;
+  height: 291px;
+  width: 290px;
+  border-radius: 8px;
+  box-shadow: 0 3px 1px rgb(190, 190, 190);
+  box-shadow: 0 6px 4px rgb(190, 190, 190);
+  background-image: url(./assets/img-fulltime-campus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
   /* reset css */
   p {
     font-size: 22px;
     line-height: 1.454545454545455;
+  }
+  /* landing */
+  .landing {
+    position: relative;
+    z-index: 2;
+  }
+
+  .landing-content {
+    padding: 120px 0;
+    height: auto;
+    /* auto로 지정하면 콘텐츠 자체의 높이만큼
+      된다. 현재 안에 들어간 요소들과 패딩까지해서
+      높이가 정해진 상태임 */
+  }
+
+  .landing-title {
+    font-size: 70px;
+    line-height: 1.028571428571429;
+    margin-bottom: 32px;
+  }
+  .landing-desc {
+    margin-bottom: 32px;
+  }
+
+  .fill-button {
+    font-size: 18px;
+    line-height: 1.555555555555556;
+    width: 160px;
+    height: 56px;
+  }
+  .landing .button-group .fill-button:first-child {
+    margin-right: 16px;
+  }
+  /* service */
+  .service {
+    position: relative;
+    z-index: 1;
+  }
+
+  .service-content {
+    padding: 120px 0;
+    flex-direction: row;
+  }
+  .service-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .service-block:first-child {
+    margin-right: 110px;
+  }
+
+  .service-title {
+    font-size: 26px;
+    line-height: 1.307692307692308;
+  }
+
+  .service-desc {
+    font-size: 22px;
+    line-height: 1.307692307692308;
+  }
+
+  /* program */
+
+  .program-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .program-name {
+    margin-bottom: 16px;
+  }
+  .program-title {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+  .program-desc {
+    font-size: 22px;
+    line-height: 1.454545454545455;
+    margin-bottom: 72px;
   }
 }
 
@@ -58,54 +282,4 @@ p {
   .container {
     max-width: 960px !important;
   }
-}
-
-/* begin code */
-
-h1 {
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 1.028571428571429;
-  letter-spacing: 0.05;
-  margin-bottom: 32px;
-}
-.all {
-  max-height: 2979px;
-}
-
-.center {
-  padding: 120px;
-  height: 564px;
-  width: 100%;
-  background-color: #fdded8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-}
-
-.center button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2px;
-  width: 160px;
-  height: 56px;
-  position: absolute;
-}
-
-.blue {
-  background-color: #3040c4;
-  color: #fff;
-  padding: 14px 38px;
-  border: none;
-}
-
-.white {
-  color: #3040c4;
-  background-color: #fff;
-  padding: 14px 38px;
-  border: none;
 }
