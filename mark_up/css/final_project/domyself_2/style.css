@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+/* reset css */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  box-shadow: none;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
+
+/* begin code */
+
+/* landing */
+
+.landing {
+  background-color: #fdded8;
+  text-align: center;
+  box-shadow: 0 4px 4px #999;
+}
+
+.landing-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing-title {
+  color: #2b292d;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.05;
+  margin-bottom: 24px;
+}
+
+.landing-desc {
+  margin-bottom: 24px;
+}
+
+/* .landing .button-group */
+.landing .button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fill-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  height: 48px;
+  width: 140px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #3040c4;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fill-button.inverted {
+  color: #3040c4;
+  background-color: #fff;
+}
+
+.landing .button-group .fill-button:first-child {
+  margin-right: 8px;
+}
+
+.fill-button:hover {
+  opacity: 0.5;
+}
+
+/* service */
+
+.service {
+  padding: 80px 0;
+  color: #2b292d;
+  background-color: #f4f5f7;
+}
+
+.service-title {
+  font-size: 22px;
+  line-height: 1.363636363636364;
+  margin-bottom: 16px;
+  letter-spacing: -0.04;
+}
+
+.service .col-12:first-child {
+  margin-bottom: 40px;
+}
+
+/* section */
+
+.section {
+  padding: 80px 0;
+}
+
+.section-category {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  color: #2b292d;
+  font-size: 34px;
+  line-height: 1.058823529411765;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* program */
+
+.program .section-category {
+  color: #009b4d;
+}
+
+@media screen and (min-width: 768px) {
+  /* reset css */
+  p {
+    font-size: 22px;
+    line-height: 1.454545454545455;
+  }
+  /* landing */
+
+  .landing-content {
+    padding: 120px 0;
+    height: auto;
+    /* auto로 지정하면 콘텐츠 자체의 높이만큼
+    된다. 현재 안에 들어간 요소들과 패딩까지해서
+    높이가 정해진 상태임 */
+  }
+
+  .landing-title {
+    font-size: 70px;
+    line-height: 1.028571428571429;
+    margin-bottom: 32px;
+    letter-spacing: -0.05;
+    font-weight: 700;
+  }
+  .landing-desc {
+    margin-bottom: 32px;
+  }
+
+  .fill-button {
+    font-size: 18px;
+    line-height: 1.555555555555556;
+    width: 160px;
+    height: 56px;
+  }
+  .landing .button-group .fill-button:first-child {
+    margin-right: 16px;
+  }
+
+  /* service */
+
+  .service-title {
+    font-size: 26px;
+    line-height: 1.307692307692308;
+  }
+  .service .col-12:first-child {
+    margin-bottom: 0px;
+  }
+
+  /* section */
+  .section {
+    padding-bottom: 96px;
+  }
+
+  .section-category {
+    font-size: 22px;
+    line-height: 1.090909090909091;
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  .section-desc {
+    font-size: 22px;
+    line-height: 1.454545454545455;
+  }
+
+  /* program */
+  .program {
+    text-align: center;
+  }
+}
+
+/*custopm gird system fix container width*/
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
