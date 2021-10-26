@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  width: 360px;
+}
+
+.card-title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px;
+  font-size: 18px;
+  line-height: 1.333333333333333;
+  color: #fff;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.375776) 57.03%,
+    #000000 100%
+  );
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.card-image:hover .card-title {
+  opacity: 1;
+}
+
+.card-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 265px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.user-image img {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.user-name:hover {
+  transition: opacity 250ms ease-in-out;
+  opacity: 0.5;
+}
+
+.card-user a {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  color: #1f2d3d;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-stats {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card-stats div {
+  display: flex;
+  color: #9e9ea7;
+  align-items: center;
+  cursor: default;
+}
+
+.card-stats div:hover {
+  color: #ea4c89;
+}
+
+.card-stats dt {
+  width: 15px;
+  height: 15px;
+  text-indent: -100000px;
+  margin-right: 5.5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: transparent;
+}
+.card-stats div:first-child {
+  margin-right: 12px;
+}
+
+.stats-comments dt {
+  background-image: url(/assets/icon-comment-muted.svg);
+}
+
+.stats-comments:hover dt {
+  background-image: url(./assets/icon-comment-active.svg);
+}
+
+.stats-likes dt {
+  background-image: url(./assets/icon-favorite-muted.svg);
+}
+
+.stats-likes:hover dt {
+  background-image: url(./assets/icon-favorate-active.svg);
+}
