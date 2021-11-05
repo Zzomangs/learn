@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+#wrap{ width: 100%;}
+
+#header{float: left; width: 100%; height:160px;}
+.h_top{
+      margin: 0 auto;
+      width: 1000px; height:35px;
+      background-color: coral;}
+.h_body{
+      margin: 0 auto; 
+      width: 1000px; height:75px;
+      background-color: cornsilk;}
+.main_nav{ width: 100%; height: 50px;
+          background-color: cornflowerblue;}
+
+
+#main_img{float: left; width: 100%; height: 460px;
+          background-color: blueviolet;
+         }
+
+#contents{ float: left; 
+           width: 100%; height: 1950px;
+           background-color: cadetblue;}
+/* #contents > article{ }  */
+
+.item{ margin: 0 auto; margin-top: 40px;
+       width: 1000px; height: 260px;
+       background-color: darkgray;}
+.item_h{float: left;
+        width:180px; height: 260px;
+        background-color: darkmagenta;
+    }
+.item_b{float: right;
+        width:800px; height: 260px;
+        background-color: darkmagenta;}
+
+.banner{ margin:0 auto; margin-top:40px;
+        width: 1000px; height:275px;
+        background-color: darkmagenta;
+}
+
+.movie{ margin-top: 40px;
+        width: 100%; height: 300px;
+        background-color: darkmagenta;}
+
+.style{margin: 0 auto; margin-top: 40px;
+       width: 1000px; height: 260px;
+       background-color: darkgray;}
+.style_h{
+    float: left;
+    width:180px; height: 260px;
+    background-color: darkmagenta;}
+.style_b{
+    float: right;
+    width:800px; height: 260px;
+    background-color: darkmagenta;}
+
+
+.go_btns{
+    margin: 0 auto; margin-top: 40px;
+    width: 1000px; height:395px;
+    background-color: darkmagenta;}
+
+.info_box{
+    margin-top: 40px;
+    width: 100%; height:165px;
+    background: url(../images/footer_top_bg.jpg)repeat-x 0 0;
+
+}
+
+#footer{float: left; width: 100%; height: 420px;
+        background-color: coral;}
+.f_top{ margin: 0 auto;
+        width: 1000px;
+        height:300px;
+        background-color: darkred;}
+.f_bom{ width: 100%; border-top:2px solid #ccc;}
+.f_bom_in{ margin: 0 auto;
+           width:1000px; 
+           height:120px;
+        background-color: aquamarine;}        
